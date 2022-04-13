@@ -129,12 +129,12 @@ namespace MiCalculadora
             // 
             this.lblResultado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI Emoji", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(432, 26);
+            this.lblResultado.Location = new System.Drawing.Point(197, 26);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(166, 49);
+            this.lblResultado.Size = new System.Drawing.Size(401, 49);
             this.lblResultado.TabIndex = 3;
             this.lblResultado.Text = "0";
-            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // IstOperaciones
