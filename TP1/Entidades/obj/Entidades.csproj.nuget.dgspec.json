@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\ElectronicG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ElectronicG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

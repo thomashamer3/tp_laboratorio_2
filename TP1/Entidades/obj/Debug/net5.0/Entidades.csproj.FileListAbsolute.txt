@@ -34,3 +34,15 @@ C:\Users\ElectronicG\Desktop\Programacion 2 y Laboratorio 2\TPS LABO 2 HAMER\TP1
 C:\Users\ElectronicG\Desktop\Programacion 2 y Laboratorio 2\TPS LABO 2 HAMER\TP1 Hecho\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\ElectronicG\Desktop\Programacion 2 y Laboratorio 2\TPS LABO 2 HAMER\TP1 Hecho\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\ElectronicG\Desktop\Programacion 2 y Laboratorio 2\TPS LABO 2 HAMER\TP1 Hecho\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\bin\Debug\net5.0\Entidades.deps.json
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\bin\Debug\net5.0\Entidades.dll
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\bin\Debug\net5.0\ref\Entidades.dll
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\bin\Debug\net5.0\Entidades.pdb
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfoInputs.cache
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.AssemblyInfo.cs
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.dll
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\ref\Entidades.dll
+C:\Users\ElectronicG\Documents\GitHub\tp_laboratorio_2\TP1\Entidades\obj\Debug\net5.0\Entidades.pdb

@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ElectronicG\\Desktop\\TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectUniqueName": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "projectName": "MiCalculadora",
-      "projectPath": "C:\\Users\\ElectronicG\\Desktop\\TP1\\MiCalculadora\\MiCalculadora.csproj",
+      "projectPath": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\MiCalculadora\\MiCalculadora.csproj",
       "packagesPath": "C:\\Users\\ElectronicG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ElectronicG\\Desktop\\TP1\\MiCalculadora\\obj\\",
+      "outputPath": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\MiCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ElectronicG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\ElectronicG\\Desktop\\TP1\\Entidades\\Entidades.csproj"
+            "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\ElectronicG\\Documents\\GitHub\\tp_laboratorio_2\\TP1\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -86,7 +86,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }
