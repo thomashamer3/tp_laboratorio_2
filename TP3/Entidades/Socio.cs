@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Threading;
-using System.Xml;
-using System.Xml.Serialization;
 
 namespace Entidades
 {
@@ -71,7 +69,6 @@ namespace Entidades
         }
         #endregion
 
-
         #region Propiedades
         public string Nombre { get; set; }
         public string Apellido { get; set; }
@@ -85,7 +82,6 @@ namespace Entidades
         #endregion
 
         #region Operadores
-
         /// <summary>
         /// Valida si Dos Socios Son Iguales en Base al DNI.
         /// </summary>
@@ -102,11 +98,9 @@ namespace Entidades
         /// <param name="socio1"></param>
         /// <returns></returns>
         public static bool operator !=(Socio socioA, Socio socioB) => !(socioA == socioB);
-
         #endregion
 
         #region Metodos
-
         /// <summary>
         /// Rescata la Informacion de Un Socio.
         /// </summary>
@@ -117,7 +111,6 @@ namespace Entidades
                 + "│ Sexo: " + this.Sexo + "│ DNI: " + this.Dni + "│ Fecha de Ingreso: " + this.FechaIngreso.ToShortDateString()
                 + "│ Estatus: " + this.Status + "│ Pase: " + this.Pase + "│ Pago: " + this.Pago;
         }
-
 
         /// <summary>
         /// Valida si El Objeto es Del Mismo Tipo de la Clase.
@@ -130,7 +123,6 @@ namespace Entidades
 
             return socio != null && this == socio;
         }
-
         #endregion
 
     }

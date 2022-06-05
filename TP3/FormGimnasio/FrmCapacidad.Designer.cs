@@ -94,7 +94,6 @@ namespace FormGimnasio
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmCapacidad";
             this.Text = "Capacidad";
-            this.Load += new System.EventHandler(this.FrmCapacidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

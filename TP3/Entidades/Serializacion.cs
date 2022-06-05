@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using System.Xml.Serialization;
 
 namespace Entidades
@@ -12,7 +7,6 @@ namespace Entidades
     public class Serializacion<T> : IAdministradorFiles<T>
         where T : class
     {
-
         private static string rutaArchivo;
 
         #region Metodos
@@ -82,8 +76,6 @@ namespace Entidades
             }
             return retorno;
         }
-
-        
 
         #endregion
     }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -25,10 +24,10 @@ namespace Entidades
         #region Metodos
 
         /// <summary>
-        /// Cuenta el Número de Socios Masculinos y Femeninos en el Gimnasio.
+        /// Cuenta el Numero de Socios Masculinos y Femeninos en el Gimnasio.
         /// </summary>
         /// <returns>
-        /// El método está devolviendo una cadena.
+        /// El Metodo está devolviendo una cadena.
         /// </returns>
         public String SociosPorGenero()
         {
@@ -57,7 +56,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Cuenta el NUmero de Miembros con Cada Tipo de Membresia y Devuelve una Cadena con los Resultados.
+        /// Cuenta el Numero de Miembros con Cada Tipo de Membresia y Devuelve una Cadena con los Resultados.
         /// </summary>
         public string SociosPorPase()
         {
@@ -152,7 +151,6 @@ namespace Entidades
 
         }
 
-
         /// <summary>
         /// Devuelve una Cadena Con el Numero de Miembros Activos que Pagan en Efectivo, Credito o Debito.
         /// </summary>
@@ -174,7 +172,6 @@ namespace Entidades
             stringBuilder.AppendLine("Socios Activos que Abonan con Debito : " + totalSociosDebito);
 
             return stringBuilder.ToString();
-
         }
 
 

@@ -1,5 +1,5 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Entidades;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestUnitarios
 {
@@ -67,7 +67,6 @@ namespace TestUnitarios
             gimnasio.Remover(socio1);
             gimnasio.Remover(socio3);
             gimnasio.Remover(socio6);
-
             espacioLibre = gimnasio.LugaresLibres;
 
             //Assert
@@ -117,8 +116,6 @@ namespace TestUnitarios
             gimnasio.Agregar(socio14);
             gimnasio.Agregar(socio15);
             gimnasio.Agregar(socio16);
-
         }
-
     }
 }

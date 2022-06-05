@@ -1,12 +1,5 @@
 ﻿using Entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FormGimnasio
@@ -20,7 +13,7 @@ namespace FormGimnasio
             InitializeComponent();
         }
 
-        public FrmAltaSocio(Socio socio):this()
+        public FrmAltaSocio(Socio socio) : this()
         {
             this.socio = socio;
             this.AgregarDatosDeUsuario();
@@ -43,7 +36,8 @@ namespace FormGimnasio
             this.cmbPago.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            if(this.socio is null){
+            if (this.socio is null)
+            {
                 this.txtFechaIngreso.Visible = false;
                 this.lblFecha.Visible = false;
             }
@@ -91,7 +85,7 @@ namespace FormGimnasio
             {
                 MessageBox.Show("Debes completar todos los campos", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+
             else
             {
                 if (!int.TryParse(txtDni.Text, out int numeroError))
@@ -100,7 +94,7 @@ namespace FormGimnasio
                 }
                 else
 
-                if(socio is null)
+                if (socio is null)
                 {
                     socio = new Socio(this.txtNombre.Text,
                                       this.txtApellido.Text,
@@ -151,7 +145,6 @@ namespace FormGimnasio
         }
         #endregion
 
-        
         /// <summary>
         /// Es una Funcion que Solo Permite Ingresar Letras en un Cuadro de Texto.
         /// </summary>

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-using System.Xml.Serialization;
 
 namespace Entidades
 {
@@ -45,8 +39,7 @@ namespace Entidades
         public int Capacidad { get; set; }
         #endregion
 
-
-        #region Operators
+        #region Operadores
 
         /// <summary>
         /// Valida Si el Socio ya se Encuentra en La Lista.
@@ -194,7 +187,6 @@ namespace Entidades
             sb.AppendLine(this.lista.Count.ToString());
             sb.Append("Recaudacion: ");
             sb.AppendLine(this.TotalFacturado().ToString());
-
             sb.AppendLine();
             foreach (Socio socio in this.lista)
             {
@@ -204,13 +196,9 @@ namespace Entidades
                 }
             }
             return sb.ToString();
-
         }
-
-
     }
     #endregion
-
 }
 
 

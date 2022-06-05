@@ -1,14 +1,8 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
 
 namespace FormGimnasio
 {
@@ -24,7 +18,6 @@ namespace FormGimnasio
 
         #region Propiedades
         public int Capacidad { get; }
-
         #endregion
 
         #region Constructores
@@ -43,11 +36,9 @@ namespace FormGimnasio
         /// <param name="e"></param>
         private void frmGym_Load(object sender, EventArgs e)
         {
-
             serializador = new Serializacion<List<Socio>>();
             rutaArchivo = Environment.CurrentDirectory + @"\Socios.xml";
             gimnasio = new Gimnasio(this.EstablecerCapacidad(Capacidad));
-
             try
             {
 
@@ -63,10 +54,8 @@ namespace FormGimnasio
 
                 MessageBox.Show(ex.Message);
             }
-
             this.ActualizarDatos();
             this.lblCapacidadSocios.Text += gimnasio.Capacidad.ToString();
-
         }
 
         /// <summary>
@@ -76,14 +65,10 @@ namespace FormGimnasio
         /// <param name="e"></param>
         private void btnSocio_Click(object sender, EventArgs e)
         {
-
             FrmAltaSocio frmSocio = new FrmAltaSocio();
             Socio socio;
-
             frmSocio.StartPosition = FormStartPosition.CenterScreen;
-
             DialogResult rta = frmSocio.ShowDialog();
-
             if (rta == DialogResult.OK)
             {
                 socio = frmSocio.AgregarSocio();
@@ -91,10 +76,8 @@ namespace FormGimnasio
                 {
                     if (gimnasio.Agregar(socio))
                     {
-
                         this.ActualizarListBox();
                         this.ActualizarDatos();
-
                     }
                     else
                     {
@@ -108,7 +91,6 @@ namespace FormGimnasio
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                 }
             }
         }
@@ -120,20 +102,15 @@ namespace FormGimnasio
         /// <returns></returns>
         private int EstablecerCapacidad(int capacidad)
         {
-
             FrmCapacidad frmCapacidad = new FrmCapacidad();
             frmCapacidad.StartPosition = FormStartPosition.CenterScreen;
-
             DialogResult rta = frmCapacidad.ShowDialog();
-
             if (rta == DialogResult.OK)
             {
                 capacidad = frmCapacidad.CapacidadGimnasio;
-
             }
 
             return capacidad;
-
         }
 
         /// <summary>
@@ -145,18 +122,17 @@ namespace FormGimnasio
         {
             if (this.lstSocios.Items.Count > 0)
             {
-                 if (this.lstSocios.Items.Count != this.gimnasio.lista.Count)
-                 {
+                if (this.lstSocios.Items.Count != this.gimnasio.lista.Count)
+                {
                     if (MessageBox.Show("El Listado Se Guardara Tal Como Figura en Pantalla!",
                       "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
-                     {
-                          this.ExportTxt();
-                     }
-
-                 }
+                    {
+                        this.ExportTxt();
+                    }
+                }
                 else
                 {
-                  this.ExportTxt();
+                    this.ExportTxt();
                 }
 
             }
@@ -183,12 +159,10 @@ namespace FormGimnasio
                 CheckPathExists = true,
                 CheckFileExists = false,
                 FileName = "Listado socios"
-
             };
 
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-
                 try
                 {
                     StreamWriter sw = new StreamWriter(saveFileDialog.FileName);
@@ -200,11 +174,9 @@ namespace FormGimnasio
                     }
                     sw.WriteLine("\n\nTotal Facturado: " + this.lblTotalFacturado.Text);
                     sw.Close();
-
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -217,7 +189,6 @@ namespace FormGimnasio
         /// <param name="e"></param>
         private void btnGuardarListadoXml_Click(object sender, EventArgs e)
         {
-
             if (this.lstSocios.Items.Count > 0)
             {
                 if (this.lstSocios.Items.Count != this.gimnasio.lista.Count)
@@ -227,7 +198,6 @@ namespace FormGimnasio
                     {
                         this.ExportXml();
                     }
-                    
                 }
                 else
                 {
@@ -250,9 +220,7 @@ namespace FormGimnasio
             {
                 if (!string.IsNullOrEmpty(this.txtFiltro.Text))
                 {
-
                     this.gimnasio.lista = new List<Socio>(this.gimnasioFiltrado.lista);
-
                 }
 
                 if (serializador.Exportar(this.gimnasio.lista))
@@ -308,7 +276,7 @@ namespace FormGimnasio
                     }
                 }
             }
-            
+
         }
 
         /// <summary>
@@ -331,7 +299,6 @@ namespace FormGimnasio
             gimnasioFiltrado = new Gimnasio();
             if (!string.IsNullOrEmpty(this.txtFiltro.Text))
             {
-
                 this.lstSocios.DataSource = null;
                 this.lstSocios.Items.Clear();
                 int.TryParse(this.txtFiltro.Text, out dni);
@@ -339,9 +306,9 @@ namespace FormGimnasio
                 {
                     if (socio.Apellido.StartsWith(this.txtFiltro.Text, StringComparison.InvariantCultureIgnoreCase) ||
                         socio.Nombre.StartsWith(this.txtFiltro.Text, StringComparison.InvariantCultureIgnoreCase) ||
-                        socio.Status.ToString().StartsWith(this.txtFiltro.Text,StringComparison.InvariantCultureIgnoreCase)||
+                        socio.Status.ToString().StartsWith(this.txtFiltro.Text, StringComparison.InvariantCultureIgnoreCase) ||
                         socio.Pase.ToString().StartsWith(this.txtFiltro.Text, StringComparison.InvariantCultureIgnoreCase))
-                     {
+                    {
                         this.lstSocios.Items.Add(socio);
                         this.gimnasioFiltrado.Agregar(socio);
                     }
@@ -389,20 +356,16 @@ namespace FormGimnasio
         /// <param name="e"></param>
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            if(this.lstSocios.Items.Count == 0)
+            if (this.lstSocios.Items.Count == 0)
             {
                 MessageBox.Show("Debe Cargar a Un Socio para Editar sus Datos.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 Socio socio = this.lstSocios.SelectedItem as Socio;
-
                 FrmAltaSocio frmSocio = new FrmAltaSocio(socio);
-
                 frmSocio.StartPosition = FormStartPosition.CenterScreen;
-
                 DialogResult rta = frmSocio.ShowDialog();
-
                 if (rta == DialogResult.OK)
                 {
                     socio = frmSocio.AgregarSocio();
@@ -410,10 +373,8 @@ namespace FormGimnasio
                     {
                         if (gimnasio.Agregar(socio))
                         {
-
                             this.ActualizarListBox();
                             this.ActualizarDatos();
-
                         }
                         else
                         {
@@ -427,12 +388,9 @@ namespace FormGimnasio
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message, "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
                     }
                 }
             }
-            
-
         }
 
         /// <summary>
