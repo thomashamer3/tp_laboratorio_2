@@ -113,9 +113,9 @@ namespace Entidades
         /// <returns>Devuelve dicha informacion en formato String</returns>
         public override string ToString()
         {
-            return "ID: " + this.Id + " Nombre: " + this.Nombre + " Apellido: " + this.Apellido
-                + " Sexo: " + this.Sexo + " DNI: " + this.Dni + " Fecha de ingreso: " + this.FechaIngreso.ToShortDateString()
-                + " Estatus: " + this.Status + " Pase: " + this.Pase + " Pago: " + this.Pago;
+            return "ID: " + this.Id + "│ Nombre: " + this.Nombre + "│ Apellido: " + this.Apellido
+                + "│ Sexo: " + this.Sexo + "│ DNI: " + this.Dni + "│ Fecha de Ingreso: " + this.FechaIngreso.ToShortDateString()
+                + "│ Estatus: " + this.Status + "│ Pase: " + this.Pase + "│ Pago: " + this.Pago;
         }
 
 

@@ -163,6 +163,7 @@ namespace FormGimnasio
             // lstSocios
             // 
             this.lstSocios.FormattingEnabled = true;
+            this.lstSocios.HorizontalScrollbar = true;
             this.lstSocios.ItemHeight = 15;
             this.lstSocios.Location = new System.Drawing.Point(12, 105);
             this.lstSocios.Name = "lstSocios";

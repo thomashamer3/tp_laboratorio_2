@@ -62,7 +62,7 @@ namespace FormGimnasio
             this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDown1.Location = new System.Drawing.Point(32, 75);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            40,
+            120,
             0,
             0,
             0});
